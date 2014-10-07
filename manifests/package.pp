@@ -3,7 +3,7 @@ class stickler::package {
   ensure_packages(['make', 'gcc', 'gcc-c++', 'openssl-devel'])
 
   package { 'stickler':
-    ensure   => $version,
+    ensure   => $stickler::version,
     provider => 'gem',
   }
 }
